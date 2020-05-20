@@ -227,7 +227,7 @@ def new_transaction():
     # Check that the required fields are in the POST'ed data
     print("*********")
     print(values)
-    print("*********")
+    print("******")
     required = ['sender', 'recipient', 'amount']
     if not all(k in values for k in required):
         return 'Missing values', 400
